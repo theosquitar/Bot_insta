@@ -4,7 +4,7 @@ from instabot import Bot
 bot = Bot()
 
 # Iniciar sesión con una cuenta ya creada manualmente
-bot.login(username="gekvutq3192", password="zZzkKh5RwA")
+bot.login(username="ghmivcv1640", password="AIXXPNobqn")
 
 # Seguir la cuenta objetivo
 target_account = "mauriciopalominoayala"

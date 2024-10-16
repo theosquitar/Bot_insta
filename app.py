@@ -20,7 +20,7 @@ def generate_temp_email():
 # Función para generar un nombre de usuario y contraseña aleatorios
 def generate_random_account():
     username = ''.join(random.choices(string.ascii_lowercase, k=7)) + str(random.randint(1000, 9999))
-    password = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+    password = ''.join(random.choices(string.ascii_letters + string.digits, k=12))  # Contraseña de 12 caracteres
     return username, password
 
 # Función para configurar Selenium con soporte de proxy
@@ -163,6 +163,7 @@ def enter_verification_code(browser, code):
 
 # Ejecutar el script
 if __name__ == "__main__":
+
     email, username, domain = generate_temp_email()
     account_username, password = generate_random_account()
 
